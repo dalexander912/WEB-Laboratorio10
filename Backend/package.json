@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "WEB: Laboratorios 6 - 10",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielAlexander912/WEB-Laboratorio9.git"
+  },
+  "author": "DanielAlexander912",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielAlexander912/WEB-Laboratorio9/issues"
+  },
+  "homepage": "https://github.com/DanielAlexander912/WEB-Laboratorio9#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3"
+  },
+  "type": "module"
+}
