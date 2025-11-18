@@ -9,7 +9,7 @@ export const getReport = (request, response) => {
     GROUP BY c.name`, 
     (error, results) => {
     if (error) {
-      throw error;
+      return response.status(500).json({ error: "No se pudo obtener el reporte" });
     }
     response.status(200).json(results.rows);
   })

@@ -85,48 +85,51 @@ function App() {
       <h1>WEB - Laboratorio 10</h1>
       <h4 className="subtitle">Daniel Alexander Armas Domínguez - 00232622 - Sección 02</h4>
 
-      <hr></hr>
+      <div className="searchSection">
+        <hr></hr>
 
-      <button onClick={buttonShowCustomers} className="largeButton">
-        {showCustomers ? "Ocultar clientes" : "Listar clientes"}
-      </button>
+        <button onClick={buttonShowCustomers} className="largeButton">
+          {showCustomers ? "Ocultar clientes" : "Listar clientes"}
+        </button>
 
-      <form onSubmit={buttonRegisterSale}>
-        <input
-          type="number"
-          placeholder="Monto"
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="ID de Cliente"
-          value={idCustomer}
-          onChange={(e) => setIdCustomer(e.target.value)}
-        />
-        <button type="submit">Registrar venta</button>
-      </form>
+        <form onSubmit={buttonRegisterSale}>
+          <input
+            type="number"
+            placeholder="Monto"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="ID de Cliente"
+            value={idCustomer}
+            onChange={(e) => setIdCustomer(e.target.value)}
+          />
+          <button type="submit">Registrar venta</button>
+        </form>
 
-      <button onClick={buttonShowSales} className="largeButton">
-        {showSales ? "Ocultar ventas" : "Listar ventas"}
-      </button>
+        <button onClick={buttonShowSales} className="largeButton">
+          {showSales ? "Ocultar ventas" : "Listar ventas"}
+        </button>
 
-      <form onSubmit={buttonShowCustomerByCode}>
-        <input className="codigoInput"
-          type="text"
-          placeholder="Código"
-          value={customerCode}
-          onChange={(e) => setCustomerCode(e.target.value)}
-        />
-        <button type="submit">{showCustomerByCode ? "Ocultar" : "Buscar por código"}</button>
-      </form>
+        <form onSubmit={buttonShowCustomerByCode}>
+          <input className="codigoInput"
+            type="text"
+            placeholder="Código"
+            value={customerCode}
+            onChange={(e) => setCustomerCode(e.target.value)}
+          />
+          <button type="submit">{showCustomerByCode ? "Ocultar" : "Buscar por código"}</button>
+        </form>
 
-      <button onClick={buttonShowReport} className="largeButton">
-        {showReport ? "Ocultar reporte" : "Mostrar reporte"}
-      </button>
+        <button onClick={buttonShowReport} className="largeButton">
+          {showReport ? "Ocultar reporte" : "Mostrar reporte"}
+        </button>
+
+        <hr></hr>
+      </div>
+      
     </div>
-
-    <hr></hr>
     
     <p>Resultados:</p>
     <div>

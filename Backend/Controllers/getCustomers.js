@@ -16,7 +16,7 @@ export const getCustomerByCode = (request, response) => {
 
   pool.query('SELECT * FROM customers WHERE code = $1', [code], (error, results) => {
     if (error) {
-      throw error;
+      return response.status(500).json({ error: "No se pudo realizar la búsqueda" });
     }
     response.status(200).json(results.rows);
   })

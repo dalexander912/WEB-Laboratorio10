@@ -11,11 +11,27 @@
 }
 
 table {
+  border-width: 16px;
+  border: 16px solid;
+  border-color: #242424;
+}
+
+tbody {
+  background-color: #3d2e42;
+}
+
+thead {
   background-color: #1a1a1a;
 }
 
 input {
   height: 25px;
+  background-color: #1a1a1a;
+  font-weight: 500;
+  font-family: inherit;
+  outline: auto;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .codigoInput {
@@ -24,4 +40,14 @@ input {
 
 .largeButton {
   min-width: 640px;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.searchSection {
+  background-color: #3d2e42;
 }
